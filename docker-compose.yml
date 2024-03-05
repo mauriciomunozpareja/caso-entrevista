@@ -6,9 +6,9 @@ services:
     build:
       context: ./docker
     volumes:
-     - .:/aplicacion
+     - .:/app
     ports:
-        - "5000:5000"
+        - "5001:5000"
     expose:
       - "5000"
     links:
