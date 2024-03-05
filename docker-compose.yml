@@ -1,0 +1,54 @@
+version: '2'
+services:
+  redis:
+    image: redis
+  colegio_entrevista:
+    build:
+      context: ./docker
+    volumes:
+     - .:/app
+    ports:
+        - "5001:5000"
+    expose:
+      - "5000"
+    links:
+      - redis:redis
+      - mysql:mysql
+    environment:
+      MYSQL_HOST: mysql
+      MYSQL_USER: root
+      MYSQL_PASSWORD: password
+      MYSQL_DB: colegio_entrevista
+    depends_on:
+      - redis
+      - mysql
+  mysql:
+    image: mysql:5.7
+    restart: always
+    environment:
+      MYSQL_DATABASE: 'colegio_entrevista'
+      MYSQL_ROOT_PASSWORD: 'password'
+    ports:
+      - '3306:3306'
+    expose:
+      - '3306'
+    volumes:
+      - ./my-db:/var/lib/mysql
+  phpmyadmin:
+    image: phpmyadmin
+    container_name: "${COMPOSE_PROJECT_NAME}-phpmyadmin"
+    links:
+      - mysql
+    environment:
+      PMA_HOST: mysql
+      PMA_PORT: 3306
+      PMA_USER: root
+      PMA_PASSWORD: 'password'
+      MYSQL_ROOT_PASSWORD: 'password'
+      UPLOAD_LIMIT: 512M
+      MEMORY_LIMIT: 512M
+    ports:
+      - "8080:80"
+      - "8443:443"
+    depends_on:
+      - mysql

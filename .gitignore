@@ -1,0 +1,5 @@
+
+# ignora todo los archivos de las carpeta de mac
+.DS_Store
+# ignore todos los archivos de la carpeta my-db
+my-db/

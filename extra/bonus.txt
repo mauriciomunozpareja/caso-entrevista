@@ -1,0 +1,7 @@
+Se dará puntos extra a quienes agreguen filtros por campo "activo" en las distintas querys
+
+
+
+alumnos
+- cambiar campo activo de alumnos a False por defecto. 
+
