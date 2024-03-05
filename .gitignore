@@ -3,4 +3,24 @@
 .DS_Store
 # ignore todos los archivos de la carpeta my-db
 my-db/
-/aplicacion/__pycache__
+aplicacion/__pycache__/
+aplicacion/helpers/__pycache__/
+aplicacion/helpers/__init__.py
+aplicacion/modelos/__pycache__/
+aplicacion/modelos/__init__.py
+aplicacion/recursos/__pycache__/
+aplicacion/recursos/__init__.py
+aplicacion/__pycache__/__init__.cpython-38.pyc
+aplicacion/__pycache__/app.cpython-38.pyc
+aplicacion/__pycache__/config.cpython-38.pyc
+aplicacion/__pycache__/db.cpython-38.pyc
+aplicacion/helpers/__pycache__/__init__.cpython-38.pyc
+aplicacion/helpers/__pycache__/utilidades.cpython-38.pyc
+aplicacion/modelos/__pycache__/__init__.cpython-38.pyc
+aplicacion/modelos/__pycache__/alumno.cpython-38.pyc
+aplicacion/modelos/__pycache__/curso.cpython-38.pyc
+aplicacion/modelos/__pycache__/profesor.cpython-38.pyc
+aplicacion/recursos/__pycache__/__init__.cpython-38.pyc
+aplicacion/recursos/__pycache__/alumno.cpython-38.pyc
+aplicacion/recursos/__pycache__/curso.cpython-38.pyc
+aplicacion/recursos/__pycache__/profesor.cpython-38.pyc
