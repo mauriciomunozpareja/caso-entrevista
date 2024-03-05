@@ -1,0 +1,229 @@
+{
+	"info": {
+		"_postman_id": "ac2fab9a-accf-4ad4-8cdc-fd9f0521e955",
+		"name": "Prueba técnica Mauricio Muñoz",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13248132"
+	},
+	"item": [
+		{
+			"name": "/alumnos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://knuckles.tuclick.cl:5001/alumnos",
+					"protocol": "http",
+					"host": [
+						"knuckles",
+						"tuclick",
+						"cl"
+					],
+					"port": "5001",
+					"path": [
+						"alumnos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/alumnos",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nombres\": \"Eduardo 3\",\n    \"apellidos\": \"Cornejo Arellano\",\n    \"fecha_inscripcion\": \"05-03-2024\",\n    \"activo\": true\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://knuckles.tuclick.cl:5001/alumnos",
+					"protocol": "http",
+					"host": [
+						"knuckles",
+						"tuclick",
+						"cl"
+					],
+					"port": "5001",
+					"path": [
+						"alumnos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/alumno/ID_ALUMNO",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://knuckles.tuclick.cl:5001/alumno/1",
+					"protocol": "http",
+					"host": [
+						"knuckles",
+						"tuclick",
+						"cl"
+					],
+					"port": "5001",
+					"path": [
+						"alumno",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/profesores",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://knuckles.tuclick.cl:5001/profesores",
+					"protocol": "http",
+					"host": [
+						"knuckles",
+						"tuclick",
+						"cl"
+					],
+					"port": "5001",
+					"path": [
+						"profesores"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/profesores",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nombres\": \"Carolina 3\",\n    \"apellidos\": \"Cornejo\",\n    \"activo\": true\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://knuckles.tuclick.cl:5001/profesores",
+					"protocol": "http",
+					"host": [
+						"knuckles",
+						"tuclick",
+						"cl"
+					],
+					"port": "5001",
+					"path": [
+						"profesores"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/profesor/ID_PROFESOR",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://knuckles.tuclick.cl:5001/profesor/3",
+					"protocol": "http",
+					"host": [
+						"knuckles",
+						"tuclick",
+						"cl"
+					],
+					"port": "5001",
+					"path": [
+						"profesor",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/cursos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://knuckles.tuclick.cl:5001/cursos",
+					"protocol": "http",
+					"host": [
+						"knuckles",
+						"tuclick",
+						"cl"
+					],
+					"port": "5001",
+					"path": [
+						"cursos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/cursos",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nombre\": \"Álgebra 4\",\n    \"id_profesor\": 1,\n    \"nivel\": 4\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://knuckles.tuclick.cl:5001/cursos",
+					"protocol": "http",
+					"host": [
+						"knuckles",
+						"tuclick",
+						"cl"
+					],
+					"port": "5001",
+					"path": [
+						"cursos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/curso/ID_CURSO",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://knuckles.tuclick.cl:5001/curso/1",
+					"protocol": "http",
+					"host": [
+						"knuckles",
+						"tuclick",
+						"cl"
+					],
+					"port": "5001",
+					"path": [
+						"curso",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
