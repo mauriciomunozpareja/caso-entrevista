@@ -98,6 +98,11 @@ class CursoModel(db.Model):
     @classmethod
     def buscar_existencia(cls, nombre):
         return cls.query.filter_by(nombre=nombre).first()
+    
+    @classmethod
+    def obtener_todos(cls):
+        cursos = cls.query.all()
+        return cursos
 
     def guardar(self):
         db.session.add(self)
