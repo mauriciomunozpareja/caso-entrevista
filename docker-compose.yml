@@ -48,6 +48,7 @@ services:
       UPLOAD_LIMIT: 512M
       MEMORY_LIMIT: 512M
     ports:
-      - "8080:80"
+      - "8085:80"
+      - "9485:443"
     depends_on:
       - mysql
